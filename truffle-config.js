@@ -18,11 +18,11 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -47,6 +47,11 @@ module.exports = {
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+    findora_forge: {
+      provider:()=> new HDWalletProvider(mnemonic, `https://prod-forge.prod.findora.org:8545`),
+      network_id: 525,       // findorad evnet's id
+      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+     },
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
@@ -85,10 +90,10 @@ module.exports = {
       version: "0.5.16",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
-      //  optimizer: {
-      //    enabled: false,
-      //    runs: 200
-      //  },
+       optimizer: {
+         enabled: true,
+         runs: 200
+       },
       //  evmVersion: "byzantium"
       // }
     }

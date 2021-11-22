@@ -32,25 +32,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"jollofswapV2Call\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/akanimoh/Documents/hackathons/uniswap/core/contracts/interfaces/IJollofswapV2Callee.sol\":\"IJollofswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/akanimoh/Documents/hackathons/uniswap/core/contracts/interfaces/IJollofswapV2Callee.sol\":{\"keccak256\":\"0x8e414bf3b01f29e36d73ffb7377b802abc9461e2cf656a5bd052066e8c9b71eb\",\"urls\":[\"bzz-raw://e5a65a6955f4e3d4737b455633338f94292c39e03905c5e9537f9fb0060e6541\",\"dweb:/ipfs/QmWJvSkyeQ32PHtWSAp34MCdaaQ1NXR7WKFSULNhhftw6T\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"jollofswapV2Call\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/akanimoh/Documents/hackathons/uniswap/v2-core/contracts/interfaces/IJollofswapV2Callee.sol\":\"IJollofswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/akanimoh/Documents/hackathons/uniswap/v2-core/contracts/interfaces/IJollofswapV2Callee.sol\":{\"keccak256\":\"0x8e414bf3b01f29e36d73ffb7377b802abc9461e2cf656a5bd052066e8c9b71eb\",\"urls\":[\"bzz-raw://e5a65a6955f4e3d4737b455633338f94292c39e03905c5e9537f9fb0060e6541\",\"dweb:/ipfs/QmWJvSkyeQ32PHtWSAp34MCdaaQ1NXR7WKFSULNhhftw6T\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.5.0;\n\ninterface IJollofswapV2Callee {\n    function jollofswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\n}\n",
-  "sourcePath": "/home/akanimoh/Documents/hackathons/uniswap/core/contracts/interfaces/IJollofswapV2Callee.sol",
+  "sourcePath": "/home/akanimoh/Documents/hackathons/uniswap/v2-core/contracts/interfaces/IJollofswapV2Callee.sol",
   "ast": {
-    "absolutePath": "/home/akanimoh/Documents/hackathons/uniswap/core/contracts/interfaces/IJollofswapV2Callee.sol",
+    "absolutePath": "/home/akanimoh/Documents/hackathons/uniswap/v2-core/contracts/interfaces/IJollofswapV2Callee.sol",
     "exportedSymbols": {
       "IJollofswapV2Callee": [
-        1718
+        1787
       ]
     },
-    "id": 1719,
+    "id": 1788,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1706,
+        "id": 1775,
         "literals": [
           "solidity",
           ">=",
@@ -58,7 +58,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:7"
       },
       {
         "baseContracts": [],
@@ -66,9 +66,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1718,
+        "id": 1787,
         "linearizedBaseContracts": [
-          1718
+          1787
         ],
         "name": "IJollofswapV2Callee",
         "nodeType": "ContractDefinition",
@@ -76,23 +76,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1717,
+            "id": 1786,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "jollofswapV2Call",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1715,
+              "id": 1784,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1708,
+                  "id": 1777,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1717,
-                  "src": "88:14:4",
+                  "scope": 1786,
+                  "src": "88:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -100,10 +100,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1707,
+                    "id": 1776,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "88:7:4",
+                    "src": "88:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -115,11 +115,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1710,
+                  "id": 1779,
                   "name": "amount0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1717,
-                  "src": "104:12:4",
+                  "scope": 1786,
+                  "src": "104:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -127,10 +127,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1709,
+                    "id": 1778,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "104:4:4",
+                    "src": "104:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -141,11 +141,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1712,
+                  "id": 1781,
                   "name": "amount1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1717,
-                  "src": "118:12:4",
+                  "scope": 1786,
+                  "src": "118:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -153,10 +153,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1711,
+                    "id": 1780,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "118:4:4",
+                    "src": "118:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -167,11 +167,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1714,
+                  "id": 1783,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1717,
-                  "src": "132:19:4",
+                  "scope": 1786,
+                  "src": "132:19:7",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -179,10 +179,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1713,
+                    "id": 1782,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "132:5:4",
+                    "src": "132:5:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -192,33 +192,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "87:65:4"
+              "src": "87:65:7"
             },
             "returnParameters": {
-              "id": 1716,
+              "id": 1785,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "161:0:4"
+              "src": "161:0:7"
             },
-            "scope": 1718,
-            "src": "62:100:4",
+            "scope": 1787,
+            "src": "62:100:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1719,
-        "src": "26:138:4"
+        "scope": 1788,
+        "src": "26:138:7"
       }
     ],
-    "src": "0:165:4"
+    "src": "0:165:7"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/akanimoh/Documents/hackathons/uniswap/core/contracts/interfaces/IJollofswapV2Callee.sol",
+      "absolutePath": "/home/akanimoh/Documents/hackathons/uniswap/v2-core/contracts/interfaces/IJollofswapV2Callee.sol",
       "exportedSymbols": {
         "IJollofswapV2Callee": [
-          1718
+          1787
         ]
       }
     },
@@ -232,9 +232,9 @@
             ".0"
           ]
         },
-        "id": 1706,
+        "id": 1775,
         "name": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:7"
       },
       {
         "attributes": {
@@ -248,10 +248,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            1718
+            1787
           ],
           "name": "IJollofswapV2Callee",
-          "scope": 1719
+          "scope": 1788
         },
         "children": [
           {
@@ -265,7 +265,7 @@
                 null
               ],
               "name": "jollofswapV2Call",
-              "scope": 1718,
+              "scope": 1787,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "external"
@@ -277,7 +277,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "sender",
-                      "scope": 1717,
+                      "scope": 1786,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -291,20 +291,20 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 1707,
+                        "id": 1776,
                         "name": "ElementaryTypeName",
-                        "src": "88:7:4"
+                        "src": "88:7:7"
                       }
                     ],
-                    "id": 1708,
+                    "id": 1777,
                     "name": "VariableDeclaration",
-                    "src": "88:14:4"
+                    "src": "88:14:7"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "amount0",
-                      "scope": 1717,
+                      "scope": 1786,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -317,20 +317,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 1709,
+                        "id": 1778,
                         "name": "ElementaryTypeName",
-                        "src": "104:4:4"
+                        "src": "104:4:7"
                       }
                     ],
-                    "id": 1710,
+                    "id": 1779,
                     "name": "VariableDeclaration",
-                    "src": "104:12:4"
+                    "src": "104:12:7"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "amount1",
-                      "scope": 1717,
+                      "scope": 1786,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -343,20 +343,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 1711,
+                        "id": 1780,
                         "name": "ElementaryTypeName",
-                        "src": "118:4:4"
+                        "src": "118:4:7"
                       }
                     ],
-                    "id": 1712,
+                    "id": 1781,
                     "name": "VariableDeclaration",
-                    "src": "118:12:4"
+                    "src": "118:12:7"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "data",
-                      "scope": 1717,
+                      "scope": 1786,
                       "stateVariable": false,
                       "storageLocation": "calldata",
                       "type": "bytes",
@@ -369,19 +369,19 @@
                           "name": "bytes",
                           "type": "bytes"
                         },
-                        "id": 1713,
+                        "id": 1782,
                         "name": "ElementaryTypeName",
-                        "src": "132:5:4"
+                        "src": "132:5:7"
                       }
                     ],
-                    "id": 1714,
+                    "id": 1783,
                     "name": "VariableDeclaration",
-                    "src": "132:19:4"
+                    "src": "132:19:7"
                   }
                 ],
-                "id": 1715,
+                "id": 1784,
                 "name": "ParameterList",
-                "src": "87:65:4"
+                "src": "87:65:7"
               },
               {
                 "attributes": {
@@ -390,24 +390,24 @@
                   ]
                 },
                 "children": [],
-                "id": 1716,
+                "id": 1785,
                 "name": "ParameterList",
-                "src": "161:0:4"
+                "src": "161:0:7"
               }
             ],
-            "id": 1717,
+            "id": 1786,
             "name": "FunctionDefinition",
-            "src": "62:100:4"
+            "src": "62:100:7"
           }
         ],
-        "id": 1718,
+        "id": 1787,
         "name": "ContractDefinition",
-        "src": "26:138:4"
+        "src": "26:138:7"
       }
     ],
-    "id": 1719,
+    "id": 1788,
     "name": "SourceUnit",
-    "src": "0:165:4"
+    "src": "0:165:7"
   },
   "compiler": {
     "name": "solc",
@@ -415,7 +415,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-11-19T15:58:14.632Z",
+  "updatedAt": "2021-11-19T23:10:21.912Z",
   "devdoc": {
     "methods": {}
   },
